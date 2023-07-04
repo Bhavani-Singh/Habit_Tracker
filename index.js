@@ -30,9 +30,6 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use(express.static('./assets')); 
 
-console.log(process.env.DB_USER_NAME);
-console.log(process.env.DB_PASSWORD);
-
 //mongo store is used to store the session cookie
 app.use(session({
     name: 'habitTracker',
